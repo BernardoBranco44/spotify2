@@ -6,7 +6,7 @@ import { genres } from '../assets/constants';
 import { useGetWorldChartsQuery } from '../redux/services/shazam';
 
 const Discover = () => {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const { activeSong, isPlaying } = useSelector((state) => state.player);
 
   const { data, isFetching, error } = useGetWorldChartsQuery();
